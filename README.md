@@ -31,7 +31,7 @@ The input to the model will be a text file with one sentence per line.
 The text will *already be tokenized* using the [spacy](https://spacy.io/api/tokenizer/) tokenizer, and you should not change the tokenization.
 An example of the input looks like this:
 ```
-["Recent", "evidence", "reveals", "that", "Neural", "Machine", "Translation", "(", "NMT", ")", "models", "with", "deeper", "neural", "networks", "can", "be", "more", "effective", "but", "are", "difficult", "to", "train", "."]
+Recent evidence reveals that Neural Machine Translation ( NMT ) models with deeper neural networks can be more effective but are difficult to train .
 ```
 
 **Output:** 
