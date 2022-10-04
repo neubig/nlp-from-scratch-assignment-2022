@@ -1,5 +1,8 @@
 # CMU Advanced NLP Assignment 2: End-to-end NLP System Building
 
+by Emmy Liu, Zora Wang, Kenneth Zheng, Lucio Dery, Abhishek Srivastava, Kundan Krishna, Graham Neubig
+
+
 So far in your machine learning classes, you may have experimented with standardized tasks and datasets that were provided and easily accessible. 
 However, in the real world, NLP practitioners often have to solve a problem from scratch, which includes gathering and cleaning data, annotating 
 the data, choosing a model, iterating on the model, and possibly going back to change the data. For this assignment, you'll get to experience this full process.
