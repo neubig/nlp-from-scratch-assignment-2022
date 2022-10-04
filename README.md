@@ -127,7 +127,7 @@ The following points are derived from the "deployment" of the system:
 
 * Your group submits testing/training data of your creation (**20 points**)
 * Your group submits code for training the system in the form of a github repo. We will not necessarily run your code, but we may look at it, so please ensure that it contains up-to-date code with a README file outlining the steps to run it. (**20 points**)
-* Points based on performance of the system on the output of the private test set (**10 points** for non-chance performance, **0 up to 10 points** based on level of performance)
+* Points based on performance of the system on the output of the private test set (**10 points** for non-chance performance, plus **0 up to 10 points** based on level of performance)
 
 The exact number of points assigned for a certain level of performance will be determined based on how well the class's models perform.
 
