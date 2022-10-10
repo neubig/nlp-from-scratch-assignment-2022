@@ -1,7 +1,5 @@
 # Scientific Entity Recognition Annotation Standard
 
-**TODO: The examples should be in CoNLL format. Right now they don't show the annotations.**
-
 This annotation standard is basically complete, but we might add some details until **October 10th** to respond to questions from members of the class.
 
 Here we give an example of how entities should be annotated by your created system.
@@ -25,6 +23,8 @@ Names of the baseline systems and proposed systems, could be:
 
 1. The main description of the method, such as: "Bidirectional Encoder Representations from Transformers". 
 2. The abbreviated form (a cute name) of their method, such as: BERT.
+
+For these systems in comparison, you should only annotate the names that, themselves or their abbreviated forms, are identical to what appears in table entries. 
 
 Meanwhile, other standalone methods, such as the main system proposed by a relevant work, should also be labeled, even though they are not among the comparison list of the given paper. 
 
@@ -101,7 +101,9 @@ H B-HyperparameterName
 
 (Tag: MetricName)
 
-Names of the evaluation metrics being used for method evaluation.
+Names of the evaluation metrics being used for method evaluation. 
+
+You need only annotate the name of the metric and not include other context. For example, given a string "the accuracy on test set" you should only annotate "accuracy".
 
 Some metrics are often abbreviated, e.g. using "acc." for "accuracy". The abbreviations are also considered valid metric names.
 
@@ -153,6 +155,10 @@ of O
 (Tag: TaskName)
 
 Name of the task that the methods are evaluated on, e.g.: "Named Entity Recognition". 
+
+You should annotate task names that could inform the reader of problem being solved.
+Good examples include "Natural Language Inference" and "Object Detection". 
+Names that do not provide information about what task is being solved "task A" should not be annotated. 
 
 _Example_: 
 
