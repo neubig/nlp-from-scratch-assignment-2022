@@ -94,7 +94,7 @@ You can read the tutorial on [token classification](https://huggingface.co/cours
 
 Because you will probably not be able to create a large dataset specifically for this task in the amount of time allocated, we strongly suggest that you use the knowledge that you have learned in this class to efficiently build a system.
 For example, you may think about ideas such as:
-1. Pre-training on a different class and fine-tuning
+1. Pre-training on a different task and fine-tuning
 2. Multi-task learning, training on different tasks at once
 3. Using prompting techniques
 
