@@ -113,7 +113,7 @@ When you are done running your system over this data, you will:
 1. submit the results to **ExplainaBoard** through a submission script similar to the one that you used in the first assignment.
 2. submit any testing or training data that you created
 
-Both of these will be due by **October 24**, and we will be releasing detailed scripts/formats shortly.
+Both of these will be due by **October 26**, and we will be releasing detailed scripts/formats shortly.
 
 ## Writing Report
 

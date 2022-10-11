@@ -30,6 +30,7 @@ Meanwhile, other standalone methods, such as the main system proposed by a relev
 
 _Tricky cases_:
 * "Human performance" is also be labeled as a MethodName.
+* In phrases like "the pretrained BERT model", only the specific method name "BERT" should be annotated.
 
 _Example_: 
 
@@ -131,6 +132,11 @@ tasks O
 . O
 ```
 
+*Tricky Cases:*
+
+- For a phrase like "macro F1 score", annotate only "macro F1" (i.e. the shortest part of the phrase that fully specifies the metric)
+- A p-value is not considered an evaluation metric and shouldn't be annotated.
+
 ### Metric Value
 
 (Tag: MetricValue)
@@ -200,3 +206,6 @@ and O
 MRPC B-DatasetName
 ```
 
+*Tricky Cases*:
+
+- In phrases like "the CoNLL dataset", only annotate "CoNLL" (i.e. the shortest part of the phrase that uniquely identifies the dataset)
