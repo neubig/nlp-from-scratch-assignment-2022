@@ -28,10 +28,6 @@ For these systems in comparison, you should only annotate the names that, themse
 
 Meanwhile, other standalone methods, such as the main system proposed by a relevant work, should also be labeled, even though they are not among the comparison list of the given paper. 
 
-_Tricky cases_:
-* "Human performance" is also be labeled as a MethodName.
-* In phrases like "the pretrained BERT model", only the specific method name "BERT" should be annotated.
-
 _Example_: 
 
 ```
@@ -55,13 +51,20 @@ Transformers I-MethodName
 . O
 ```
 
+_Tricky cases_:
+* "Human performance" is also be labeled as a MethodName.
+* In phrases like "the pretrained BERT model", only the specific method name "BERT" should be annotated.
+
 ## Hyperparameters
 
 ### Hyperparameter Name
 
 (Tag: HyperparameterName)
 
-Names of the hyper-parameters mentioned in the paper, that cannot be inferred while fitting models to the training data. This could either be the full description (e.g., "number of layers"), or the mathematical notation (e.g., "L"). 
+Names of the hyper-parameters mentioned in the paper, that cannot be inferred while fitting models to the training data. This could either be the full description (e.g., "number of layers"), or the mathematical notation (e.g., "L").
+
+_Tricky cases_:
+* "train/dev/test split ratio" should be labeled as HyperparameterName.
 
 ### Hyperparameter Value
 
@@ -134,7 +137,7 @@ tasks O
 
 *Tricky Cases:*
 
-- For a phrase like "macro F1 score", annotate only "macro F1" (i.e. the shortest part of the phrase that fully specifies the metric)
+- For a phrase like "macro F1 score", annotate only "macro F1" (i.e. the shortest part of the phrase that fully specifies the metric).
 - A p-value is not considered an evaluation metric and shouldn't be annotated.
 
 ### Metric Value
@@ -155,6 +158,9 @@ score O
 of O
 80.5 B-MetricValue
 ```
+
+_Tricky Cases_:
+* Be sure to include % at the end of the number, for example, annotating "45.6%" instead of "45.6", since they would represent different values.
 
 ## Task Name
 
@@ -186,6 +192,10 @@ entailment B-TaskName
 classification I-TaskName
 task I-TaskName
 ```
+
+_Tricky Cases_:
+
+* (Pre-)Training objectives such as "Masked Language Modeling (MLM)", "Next Sentence Prediction (NSP)", and "Cloze" should not be labeled as TaskName, because baseline/proposed methods are not evaluated on these tasks.
 
 ## Dataset Name
 

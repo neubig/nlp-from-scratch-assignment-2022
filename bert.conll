@@ -217,7 +217,9 @@ masked O
 language O
 model O
 ” O
-(MLM) O
+( O
+MLM O
+) O
 pre O
 - O
 training O
@@ -228,7 +230,8 @@ by O
 the O
 Cloze O
 task O
-(Taylor O
+( O
+Taylor O
 , O
 1953 O
 ) O
