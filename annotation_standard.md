@@ -19,40 +19,47 @@ Here the entities that need to be annotated.
 
 (Tag: MethodName)
 
-Names of the baseline systems and proposed systems, could be: 
+Names of the baseline and proposed systems, could be:
 
 1. The main description of the method, such as: "Bidirectional Encoder Representations from Transformers". 
 2. The abbreviated form (a cute name) of their method, such as: BERT.
 
-For these systems in comparison, you should only annotate the names that, themselves or their abbreviated forms, are identical to what appears in table entries. 
+In most cases, these are the system names that appear as table entries in their abbreviated forms.
 
-Meanwhile, other standalone methods, such as the main system proposed by a relevant work, should also be labeled, even though they are not among the comparison list of the given paper. 
+For MethodName, you should only annotate **(1)** the proposed system, **(2)** the baselines for the proposed system, **(3)** other standalone methods for the same task(s) tackled by the proposed system.
 
 _Example_: 
 
 ```
-we O
-improve O
-the O
-fine O
-- O
-tuning O
-based O
-approaches O
-by O
-proposing O
+Our O
+proposed O
+model O
 BERT B-MethodName
-: O
+(
 Bidirectional B-MethodName
 Encoder I-MethodName
 Representations I-MethodName
 from I-MethodName
 Transformers I-MethodName
+)
+outperforms O
+ELMo B-MethodName
+, O
+which O
+is O
+based O
+on O
+BiLSTMs O
+, O
+on O
+multiple O
+tasks O
 . O
 ```
 
 _Tricky cases_:
-* "Human performance" is also be labeled as a MethodName.
+* In the above example, "BiLSTMs" is not annotated as it is neither the proposed system ("BERT") nor a direct baseline to the proposed system ("ELMo").
+* "Human performance" should also be labeled as MethodName if it is directly compared to the proposed system.
 * In phrases like "the pretrained BERT model", only the specific method name "BERT" should be annotated.
 
 ## Hyperparameters
@@ -83,12 +90,6 @@ the O
 number B-HyperparameterName
 of I-HyperparameterName
 layers I-HyperparameterName
-( O
-i.e. O
-, O
-Transformer O
-blocks O
-) O
 as O
 L B-HyperparameterName
 , O
@@ -97,6 +98,18 @@ hidden B-HyperparameterName
 size I-HyperparameterName
 as O
 H B-HyperparameterName
+and O
+learning B-HyperparameterName
+rate I-HyperparameterName
+as O
+θ B-HyperparameterName
+( O
+θ B-HyperparameterName
+is O
+set O
+to O
+0.001 B-HyperparameterValue
+) O
 ```
 
 ## Evaluation Metrics
@@ -166,36 +179,44 @@ _Tricky Cases_:
 
 (Tag: TaskName)
 
-Name of the task that the methods are evaluated on, e.g.: "Named Entity Recognition". 
+Name of the task(s) that the current work is evaluated on, e.g.: "Named Entity Recognition".
 
-You should annotate task names that could inform the reader of problem being solved.
-Good examples include "Natural Language Inference" and "Object Detection". 
-Names that do not provide information about what task is being solved "task A" should not be annotated. 
+You should not annotate,
+1. Tasks that are mentioned but not evaluated with the proposed work. 
+2. Names that do not provide information about what task is being solved: "task A", "subtask A" should not be annotated.
 
 _Example_: 
 
 ```
-MNLI B-DatasetName
-Multi B-DatasetName
-- I-DatasetName
-Genre I-DatasetName
-Natural I-DatasetName
-Language I-DatasetName
-Inference I-DatasetName
-is O
-a O
-large O
-- O
-scale, O
-crowdsourced O
-entailment B-TaskName
-classification I-TaskName
-task I-TaskName
+BERT B-MethodName
+outperforms O
+other O
+methods O
+on O
+natural B-TaskName
+language I-TaskName
+inference I-TaskName
+( O
+NLI B-TaskName
+) O
+, O
+question B-TaskName
+answering I-TaskName
+. O
+
+It O
+was O
+not O
+evaluated O
+on O
+machine O
+translation O
+. O
 ```
 
 _Tricky Cases_:
-
-* (Pre-)Training objectives such as "Masked Language Modeling (MLM)", "Next Sentence Prediction (NSP)", and "Cloze" should not be labeled as TaskName, because baseline/proposed methods are not evaluated on these tasks.
+* In the above example, machine translation is not annotated since the proposed work ("BERT") is not evaluated on that task.
+* (Pre-)training objectives such as "Masked Language Modeling (MLM)", "Next Sentence Prediction (NSP)", and "Cloze" should not be labeled as TaskName unless the proposed work is evaluated on those tasks.
 
 ## Dataset Name
 
