@@ -5,7 +5,7 @@ This annotation standard is basically complete, but we might add some details un
 Here we give an example of how entities should be annotated by your created system.
 We use some sentences from the BERT paper as an example: [https://arxiv.org/pdf/1810.04805.pdf](https://arxiv.org/pdf/1810.04805.pdf).
 
-**Entities:** Here the entities that need to be annotated.
+Here the entities that need to be annotated.
 
 * [MethodName](#method-name)
 * [HyperparameterName](#hyperparameter-name)
@@ -14,20 +14,6 @@ We use some sentences from the BERT paper as an example: [https://arxiv.org/pdf/
 * [MetricValue](#metric-value)
 * [TaskName](#task-name)
 * [DatasetName](#task-value)
-
-**Annotated Sections:**
-In the test set most paper textual content will be included, such as:
-
-* Paper titles
-* Section headers
-* Main textual paragraphs of the paper
-* Appendices
-
-And the following will NOT be included:
-* Tables, figures, and captions
-* The "references" section
-
-So you may want to perform any annotation you do on the parts of the paper that will be included in the test set, as that will likely result in better final performance.
 
 ## Method Name
 
@@ -188,6 +174,7 @@ of O
 
 _Tricky Cases_:
 * Be sure to include % at the end of the number, for example, annotating "45.6%" instead of "45.6", since they would represent different values.
+* When talking about an increase such as "20% improvement", only "20%" should be annotated, not "improvement".
 
 ## Task Name
 
