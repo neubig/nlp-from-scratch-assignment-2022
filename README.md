@@ -98,10 +98,9 @@ For example, you may think about ideas such as:
 2. Multi-task learning, training on different tasks at once
 3. Using prompting techniques
 
-In order to _test_ your model, you will want to use an evaluation script.
-Some options include:
-* The [explainaboard_client library](https://github.com/neulab/explainaboard_client/issues), where you can use your created test data as a custom dataset.
-* [seqeval](https://github.com/chakki-works/seqeval) a Python library for evaluating sequence labeling.
+In order to _test_ your model, you will want to use an evaluation script,
+as detailed in the [evaluation and submission](evaluation_and_submission.md) page.
+This page also explains how you can do the analysis that is a component of your report.
 
 ## System Deployment
 
@@ -110,10 +109,11 @@ You should try to finish building your system before this set is released, and b
 The test set will be released shortly (2-3 days) before the final submission deadline.
 
 When you are done running your system over this data, you will:
-1. submit the results to **ExplainaBoard** through a submission script similar to the one that you used in the first assignment.
-2. submit any testing or training data that you created
+1. Submit the results to **ExplainaBoard** through a submission script. 
+   See the [evaluation and submission](evaluation_and_submission.md) page.
+2. Submit any testing or training data that you created.
 
-Both of these will be due by **October 26**, and we will be releasing detailed scripts/formats shortly.
+Both of these will be due by **October 26**.
 
 ## Writing Report
 
@@ -130,7 +130,7 @@ The following points are derived from the "deployment" of the system:
 
 * Your group submits testing/training data of your creation (**20 points**)
 * Your group submits code for training the system in the form of a github repo. We will not necessarily run your code, but we may look at it, so please ensure that it contains up-to-date code with a README file outlining the steps to run it. (**20 points**)
-* Points based on performance of the system on the output of the private test set (**10 points** for non-chance performance, plus **0 up to 10 points** based on level of performance)
+* Points based on performance of the system on the output of the private `sciner` test set (**10 points** for non-chance performance, plus **0 up to 10 points** based on level of performance)
 
 The exact number of points assigned for a certain level of performance will be determined based on how well the class's models perform.
 
@@ -149,7 +149,7 @@ The following points are derived from the report:
   - What was the justification for trying these methods?
 * You report raw numbers from experiments (**10 points**)
   - What was the result of each model that you tried on the testing data that you created?
-  - Are the results statistically significant? You can use the (a) built-in significance tests of ExplainaBoard, or (b) [a separate script](https://github.com/neubig/anlp-code/blob/main/02-bowclassifier/bowclassifier.ipynb) such as the one shown in class.
+  - Are the results statistically significant?
 * Comparative quantitative/qualitative analysis (**10 points**)
-  - Perform a comparison of the outputs on a more fine-grained level than just holistic accuracy numbers, and report the results. For instance, you may measure various models' abilities to perform recognition of various entities. ExplainaBoard provides some functionality by default, but you can also do so by writing customized analysis scripts.
+  - Perform a comparison of the outputs on a more fine-grained level than just holistic accuracy numbers, and report the results. For instance, you may measure various models' abilities to perform recognition of various entities.
   - Show examples of outputs from at least two of the systems you created. Ideally, these examples could be representative of the quantitative differences that you found above.
