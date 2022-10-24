@@ -27,7 +27,7 @@ For this assignment, you'll be working on the task of *scientific entity recogni
 Specifically, we will ask you to identify entities such as task names, model names, hyperparameter names and their values, and metric names and their values in these papers. 
 
 **Input:**
-The input to the model will be a text file with one sentence per line.
+The input to the model will be a text file with one paragraph per line.
 The text will *already be tokenized* using the [spacy](https://spacy.io/api/tokenizer/) tokenizer, and you should not change the tokenization.
 An example of the input looks like this:
 ```
