@@ -115,6 +115,16 @@ When you are done running your system over this data, you will:
 
 Both of these will be due by **October 26**.
 
+### Data Release
+
+**UPDATE (Oct. 25, 2022):** The test set is now released in the `data/` directory. It contains 3 files:
+1. [anlp-sciner-test.txt](data/anlp-sciner-test.txt): The data that should be input to your system, textual format one paragraph per line.
+2. [anlp-sciner-test-withdocstart.txt](data/anlp-sciner-test-withdocstart.txt): The same data as above, but some lines start with `-DOCSTART-` to indicate that it's the start of a paper.
+3. [anlp-sciner-test-empty.conll](data/anlp-sciner-test-empty.conll): An example of the format that should be uploaded to ExplainaBoard, but with all the tags set to "O".
+
+Please run your system over these files and upload the results.
+Because the goal of this assignment is not to perform hyperparameter optimization on this test set, we ask you to not upload too many times before the submission deadline. Try to **limit to 5 submissions**, although if you go slightly over this not an issue. Teams that make more than 10 submissions may be penalized.
+
 ## Writing Report
 
 We will ask you to write a report detailing some things about your system creation process (in the grading criteria below).
