@@ -88,9 +88,6 @@ focus your qualitative analysis on that entity type..
 
 ## Submission of Final Outputs
 
-**The sciner test set is not released yet! You will follow these instructions after it is
-released!**
-
 To run on the final test set, you will generate an output file in a similar format as
 above, and run the following command.
 
