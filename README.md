@@ -111,9 +111,9 @@ The test set will be released shortly (2-3 days) before the final submission dea
 When you are done running your system over this data, you will:
 1. Submit the results to **ExplainaBoard** through a submission script. 
    See the [evaluation and submission](evaluation_and_submission.md) page.
-2. Submit any testing or training data that you created.
+2. Submit any testing or training data that you created, as well as your code via Canvas.
 
-Both of these will be due by **October 26**.
+Both of these will be due by **October 26**. See details in grading below.
 
 ### Data Release
 
