@@ -45,14 +45,19 @@ if __name__ == '__main__':
 
     # fix for edge cases where sentences are incorrectly
     # split after "et al .", "e.g.", or "i.e."
+    # includes hacky fix for edge cases where i.e. shouldn't be merged
     cleaned_sentences = []
-    cleaned_sentences.append(sentences[0])
-    for sentence in sentences[1:]:
+    for i, sentence in enumerate(sentences):
+        if i == 0:
+            cleaned_sentences.append(sentence)
+            continue
+
         prev_sentence = cleaned_sentences[-1]
         if (prev_sentence[-7:] == 'et al .'
                 or prev_sentence[-4:] == 'e.g.'
-                or prev_sentence[-4:] == 'i.e.'):
+                or (prev_sentence[-4:] == 'i.e.' and i not in [2077, 2089])):
             cleaned_sentences[-1] += (' ' + sentence)
+
         else:
             cleaned_sentences.append(sentence)
 
