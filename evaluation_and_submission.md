@@ -14,7 +14,7 @@ You will also want to install version 0.0.9 of
 [explainaboard_client](https://github.com/neulab/explainaboard_client) which will be
 used for system submission, and can also be used for your own evaluation if you choose.
 ```shell
-pip install --upgrade --force-reinstall explainaboard_client==0.0.9 explainaboard_api_client
+pip install --upgrade --force-reinstall explainaboard_client==0.0.9 explainaboard_api_client==0.2.8
 ```
 
 Set your username and API key for the client:
